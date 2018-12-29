@@ -7,7 +7,7 @@ html {
     margin: 0;
     width: 100%;
     height: 100%;
-    background: #002d0f;
+    background: #01579B;
     font-family: 'Montserrat', sans-serif;
 }
 #home {
@@ -24,10 +24,12 @@ html {
     width: 90%;
     font-size: 2.5rem;
     color: white;
+    text-decoration: underline;
+    text-decoration-color: #29b6f6;
 }
 .main-navigation-container {
     position: absolute;
-    top: 0;
+    top: 10px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -59,7 +61,7 @@ html {
     font-family: 'Arimo', sans-serif;
 }
 .main-navigation-a:hover {
-    color: #000;
+    color: #4FC3F7;
 }
 .image-and-text-container {
     width: 100%;
@@ -83,20 +85,22 @@ html {
     margin: 0 auto;
     text-align: center;
     top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .home-page-title {
-    font-size: 4rem;
+    font-size: 6rem;
     letter-spacing: -2px;
-    color: #ff1100;
+    color: #29B6F6;
     margin: 10px 0;
     position: relative;
+    width: 50%;
 }
 .home-page-title span {
     font-style: italic;
-    color: black;
-    font-size: 4.2rem;
-    position: absolute;
-    top: 10px;
+    color: #fff;
+    text-transform: uppercase;
 }
 .slogan {
     font-size: 1.5rem;
