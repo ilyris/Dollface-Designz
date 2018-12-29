@@ -9,6 +9,7 @@ html {
     height: 100%;
     background: #01579B;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 #home {
     display: flex;
@@ -50,6 +51,7 @@ html {
 .main-navigation-li {
     list-style: none;
     padding: 10px;
+    transition: all ease-in-out 300ms;
 }
 .main-navigation-a {
     color: white;
@@ -59,6 +61,9 @@ html {
     font-weight: 800;
     letter-spacing: 2px;
     font-family: 'Arimo', sans-serif;
+}
+.main-navigation-li:hover {
+    transform: translateX(5%);
 }
 .main-navigation-a:hover {
     color: #4FC3F7;
@@ -77,7 +82,7 @@ html {
     width: 85%;
     height: 95%;
     background-size: cover;
-    background-position: center;
+    background-position-y: 40%;
 }
 .home-page-text-container {
     position: absolute;
@@ -85,12 +90,14 @@ html {
     margin: 0 auto;
     text-align: center;
     top: 15px;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 .home-page-title {
-    font-size: 6rem;
+    font-size: 8rem;
     letter-spacing: -2px;
     color: #29B6F6;
     margin: 10px 0;
@@ -103,9 +110,62 @@ html {
     text-transform: uppercase;
 }
 .slogan {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 4rem;
+    color: #80D8FF;
     margin: 0;
     font-weight: bold;
     letter-spacing: 2px;
 }
+/* Testimonials Slider */
+#testimonials{
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #fff;
+  }
+  #testimonials .next,
+  #testimonials .previous {
+    height: 50px;
+    width: 50px;
+    margin: 0 30px;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+    display: flex;
+    justify-content: center;
+  }
+  #testimonials .next i,
+  #testimonials .previous i {
+    padding: 0;
+    font-size: 50px;
+    transition: all ease-in-out 300ms;
+    color: #000;
+  }
+  #testimonials .next i:hover,
+  #testimonials .previous i:hover {
+    color:#80D8FF;
+  }
+  .slide-container {
+    display: none;
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100%;
+  }
+  .slide-container p {
+    padding-top: 1.5rem;
+    text-align: center;
+    width: 70%;
+    color: #01579B;
+  }
+  .customers-name {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #01579B;
+    font-style: italic;
+  }
