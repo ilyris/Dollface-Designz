@@ -116,6 +116,57 @@ html {
     font-weight: bold;
     letter-spacing: 2px;
 }
+/* Work Section */
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background: #ffffff;
+    width: 85%;
+    margin: 0 auto 50px auto;
+    box-sizing: border-box;
+    border: solid #050b19 5px;
+}
+.project {
+    margin: 20px;
+}
+.project img {
+    min-width: 200px;
+    max-width: 250px;
+    max-height: 300px;
+    min-height: 300px;
+    transition: all ease-in-out 350ms;
+    cursor: pointer;
+}
+.project img:hover {
+    transform: scale(1.2);
+}
+.work-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+.see-more-work-button {
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background: #01579b;
+    border: solid 3px black;
+    padding: 10px;
+    transition: all ease-in-out 500ms;
+    font-weight: bold;
+}
+.see-more-work-button:hover {
+    border-color: #fff;
+    background-color: #4FC3F7;
+    color: #000;
+    transform: translateX(10%);
+}
+.see-more-work-button i {
+    padding-left: 10px;
+}
 /* Testimonials Slider */
 #testimonials{
     height: 50vh;
