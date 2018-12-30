@@ -67,6 +67,7 @@ h6 {
     font-size: 22px;
     font-weight: 800;
     letter-spacing: 2px;
+
 }
 .main-navigation-li:hover {
     transform: translateX(5%);
@@ -124,6 +125,7 @@ h6 {
     text-shadow: 5px 5px black;
 }
 /* Work Section */
+
 .projects-container {
     display: flex;
     flex-flow: row wrap;
@@ -146,7 +148,7 @@ h6 {
     cursor: pointer;
 }
 .project img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .work-button-container {
     display: flex;
@@ -236,7 +238,8 @@ h6 {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
 }
-.about-us-title {
+.about-us-title,
+.work-title {
     color: black;
     z-index: 1000;
     font-size: 6rem;
@@ -268,10 +271,17 @@ h6 {
     background: #03A9F4;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     z-index: 10;
     grid-column: 3/8;
     grid-row: 3/9;
+}
+.about-us-text-container {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .about-us-text {
     width: 70%;
