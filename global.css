@@ -60,6 +60,33 @@ h6 {
     padding: 10px;
     transition: all ease-in-out 300ms;
 }
+.main-navigation-li.our-work:hover ul {
+    display: flex;
+}
+ul.work-dropdown-menu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: none;
+    flex-flow: row wrap;
+    top: 70%;
+    z-index: 100000000;
+    color: white;
+    transition: all ease-in-out 200ms;
+}
+.work-dropdown-menu li {
+    z-index: 10000000;
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all ease-in-out 300ms;
+    padding-left: 20px;
+    position: relative;
+}
+.work-dropdown-menu li:hover {
+    color: #80D8FF;
+    transform: translateX(10px);
+}
 .main-navigation-a {
     color: white;
     transition: all ease-in-out 300ms;
@@ -69,9 +96,7 @@ h6 {
     letter-spacing: 2px;
 
 }
-.main-navigation-li:hover {
-    transform: translateX(5%);
-}
+
 .main-navigation-a:hover {
     color: #4FC3F7;
 }
@@ -288,4 +313,13 @@ h6 {
     letter-spacing: 3px;
     line-height: 30px;
     margin: 0 auto 0 50px;
+}
+.work-container {
+    width: 100%;
+    height: 100%;
+    background: #03A9F4;
+    display: flex;
+    z-index: 10;
+    grid-column: 3/8;
+    grid-row: 3/9;
 }
