@@ -331,3 +331,45 @@ ul.work-dropdown-menu {
     grid-column: 3/8;
     grid-row: 3/9;
 }
+/* Footer */
+.footer {
+    height: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+.logo-and-footer-links-container {
+    display: flex;
+    width: 50%;
+}
+.footer .logo-container {
+    align-items: flex-start;
+    padding-top: 20px;
+}
+.footer .logo-container .logo {
+    font-size: 30px;
+}
+.footer-ul {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-li {
+    list-style: none;
+    color: #fff;
+    padding: 5px;
+}
+.giveaway-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.giveaway {
+    text-align: center;
+    font-size: 28px;
+}
