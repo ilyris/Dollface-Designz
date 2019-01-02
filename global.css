@@ -436,6 +436,10 @@ ul.work-dropdown-menu {
     display: flex;
     flex-direction: column;
 }
+.contact-us-container h3 {
+    border-bottom: 3px solid #29B6F6;
+    width: 60%;
+}
 
 .contact-us-container a {
     font-size: 18px;
@@ -448,8 +452,10 @@ ul.work-dropdown-menu {
     width: 30%;
 }
 
-.giveaway {
-    text-align: center;
-    font-size: 28px;
+.giveaway,
+.contact-us-container h3 {
+    text-align: left; 
+    color: #fff;
+    font-size: 30px;
     margin: 0;
 }
