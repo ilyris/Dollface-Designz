@@ -480,19 +480,28 @@ ul.work-dropdown-menu {
     flex-direction: column;
 }
 .contact-us-container h3 {
-    border-bottom: 3px solid #29B6F6;
     width: 60%;
 }
 
 .contact-us-container a {
     font-size: 18px;
-    padding: 10px 0;
+    padding: 5px 0;
+    width: 50%;
 }
 
 .giveaway-container {
     display: flex;
-    justify-content: center;
     width: 30%;
+    flex-direction: column;
+}
+.giveaway-container .fa-facebook-square {
+    padding-top: 15px;
+    color: #fff;
+    font-size: 2.5rem;
+    transition: all ease-in-out 300ms;
+}
+.giveaway-container .fa-facebook-square:hover {
+    color: #afafaf;
 }
 
 .giveaway,
