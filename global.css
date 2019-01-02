@@ -181,6 +181,10 @@ ul.work-dropdown-menu {
 
 /* Work Section */
 
+#work,
+#testimonials {
+    margin-top: 100px;
+}
 .projects-container {
     display: flex;
     flex-flow: row wrap;
@@ -375,13 +379,31 @@ ul.work-dropdown-menu {
 }
 
 .work-container {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    background: #03A9F4;
+    background: #01579b;
     display: flex;
+    padding: 10px;
+    margin: 0 auto;
     z-index: 10;
-    grid-column: 3/8;
-    grid-row: 3/9;
+    box-sizing: border-box;
+}
+.work-container ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.work-container li {
+    list-style: none;
+    padding: 10px
+}
+.work-container img {
+    width: 300px;
+    height: 300px;
 }
 
 /* Footer */
