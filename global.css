@@ -64,6 +64,7 @@ h6 {
 
 .main-navigation-li {
     list-style: none;
+    position: relative;
     transition: all ease-in-out 200ms;
     height: 60px;
     padding: 0 20px;
@@ -71,8 +72,8 @@ h6 {
 
 .main-navigation-li:hover,
 .main-navigation-li:hover .main-navigation-a {
-    background: #fff;
-    color: #000;
+    background: #000;
+    color: #fff;
 }
 .main-navigation-li:hover .main-navigation-a {
     background: none;
@@ -88,12 +89,12 @@ h6 {
     width: 0;
     position: absolute;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
     z-index: 11;
-    left: 10px;
-    bottom: 95%;
+    left: 30px;
+    top: 85%;
 }
 .our-work-dropdown-links{
     color: #000;
@@ -101,6 +102,9 @@ h6 {
 }
 .work-dropdown-menu li:hover .our-work-dropdown-links {
     color: #fff;
+}
+.cup-projects.our-work-dropdown-links:hover #triangle-up {
+    border-bottom-color: #000;
 }
 
 ul.work-dropdown-menu {
@@ -115,7 +119,6 @@ ul.work-dropdown-menu {
     transition: all ease-in-out 200ms;
     background: #ffffff;
     width: 200px;
-    border-top: solid 20px #01579B;
 }
 
 .work-dropdown-menu li {
