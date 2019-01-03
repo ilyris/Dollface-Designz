@@ -184,16 +184,11 @@ ul.work-dropdown-menu {
 .page-title {
     font-size: 8rem;
     letter-spacing: -2px;
-    color: #29B6F6;
+    text-shadow: 2px 2px 2px #000;
+    color: #80D8FF;
     margin: 10px 0;
     position: relative;
     width: 50%;
-}
-
-.page-title span {
-    font-style: italic;
-    color: #fff;
-    text-transform: uppercase;
 }
 
 .slogan {
@@ -202,7 +197,7 @@ ul.work-dropdown-menu {
     margin: 0;
     font-weight: bold;
     letter-spacing: 2px;
-    text-shadow: 5px 5px black;
+    text-shadow: 2px 2px black;
 }
 
 /* Work Section */
