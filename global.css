@@ -207,8 +207,7 @@ ul.work-dropdown-menu {
 
 /* Work Section */
 
-#work,
-#testimonials {
+#work {
     margin-top: 100px;
 }
 .projects-container {
@@ -276,6 +275,34 @@ ul.work-dropdown-menu {
 }
 .homepage-external-link-button.contact {
     font-size: 20px;
+}
+/* Pricing */
+#pricing {
+    width: 100%;
+    height: 40vh;
+    background: #80d8ff;
+}
+.pricing-container {
+    display: flex;
+    height: 80%;
+    background: #4fc3f7;
+}
+.pricing-text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-text-container h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #000;
+    margin: 10px;
+}
+.pricing-text-container p {
+    font-size: 20px;
+    margin: 0;
 }
 
 /* Testimonials Slider */
