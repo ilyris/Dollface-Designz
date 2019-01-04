@@ -28,6 +28,8 @@ h6 {
     height: 100vh;
     flex-flow: column wrap;
     position: relative;
+    box-sizing: border-box;
+    padding: 0 125px;
 }
 
 .logo {
@@ -37,6 +39,7 @@ h6 {
     color: white;
     text-decoration: underline;
     text-decoration-color: #29b6f6;
+    padding-left: 10px;
 }
 
 .main-navigation-container {
@@ -44,7 +47,6 @@ h6 {
     top: 10px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
 }
 
 .main-navigation,
@@ -52,13 +54,13 @@ h6 {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 60%;
     align-items: center;
 }
 
 .logo-container {
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 40%;
 }
 
@@ -67,7 +69,7 @@ h6 {
     position: relative;
     transition: all ease-in-out 200ms;
     height: 60px;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .main-navigation-li:hover,
@@ -99,6 +101,7 @@ h6 {
 .our-work-dropdown-links{
     color: #000;
     text-decoration: none;
+    font-size: 18px;
 }
 .work-dropdown-menu li:hover .our-work-dropdown-links {
     color: #fff;
@@ -142,7 +145,7 @@ ul.work-dropdown-menu {
     color: white;
     transition: all ease-in-out 300ms;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     width: 100%;
     display: flex;
     height: 100%;
@@ -158,11 +161,13 @@ ul.work-dropdown-menu {
     align-items: center;
     position: relative;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .home-page-image-container {
     background: url(home-page-bg-image.jpg);
-    width: 85%;
+    width: 100%;
     height: 95%;
     background-size: cover;
     background-position-y: 40%;
@@ -173,12 +178,12 @@ ul.work-dropdown-menu {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    top: 15px;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    box-sizing: border-box;
+    height: 95%;
 }
 
 .page-title {
@@ -264,12 +269,11 @@ ul.work-dropdown-menu {
 }
 .homepage-external-link-button-container.contact{
     justify-content: flex-end;
-    margin: 0;
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
 }
 .homepage-external-link-button.contact {
     font-size: 20px;
+    margin-right: 10px;
 }
 /* Pricing */
 #pricing {
@@ -302,13 +306,17 @@ ul.work-dropdown-menu {
 
 /* Testimonials Slider */
 #testimonials {
-    height: 50vh;
+    background: #fff;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.testimonial-slider {
     position: relative;
     display: flex;
     align-items: center;
-    background: #fff;
 }
-
 #testimonials .next,
 #testimonials .previous {
     height: 50px;
@@ -318,6 +326,7 @@ ul.work-dropdown-menu {
     transition: all ease-in-out 200ms;
     display: flex;
     justify-content: center;
+    transform: translateY(-100%);
 }
 
 #testimonials .next i,
@@ -347,10 +356,11 @@ ul.work-dropdown-menu {
 }
 
 .slide-container p {
-    padding-top: 1.5rem;
     text-align: center;
     width: 70%;
     color: #01579B;
+    margin: 0;
+    padding: 1.5rem 0;
 }
 
 .customers-name {
@@ -375,7 +385,8 @@ ul.work-dropdown-menu {
 .clothing-title,
 .cups-title,
 .blocks-title,
-.flower-boxes-title {
+.flower-boxes-title,
+.testimonials-title {
     color: black;
     z-index: 1000;
     font-size: 6rem;
@@ -385,6 +396,12 @@ ul.work-dropdown-menu {
     text-align: center;
     margin: 0;
 }
+.testimonials-title {    
+    font-size: 3rem;
+    width: 55%;
+    margin: 0 auto;
+}
+
 .clothing-title,
 .cups-title,
 .blocks-title,
