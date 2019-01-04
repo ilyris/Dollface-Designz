@@ -25,12 +25,12 @@ h6 {
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    width: 100%;
-    height: 100vh;
-    flex-flow: column wrap;
+    width: 80%;
+    height: 85%;
+    flex-direction: column;
     position: relative;
     box-sizing: border-box;
-    padding: 0 125px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -49,6 +49,7 @@ h6 {
     width: 80%;
     display: flex;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .main-navigation,
@@ -212,8 +213,7 @@ ul.work-dropdown-menu {
 
 /* Work Section */
 .page-front #work{
-    margin-top: 100px;
-    height: 60vh;
+    margin: 100px 0;
 }
 #work {
     margin-top: 100px;
@@ -233,10 +233,10 @@ ul.work-dropdown-menu {
 }
 
 .project img {
-    min-width: 150px;
-    max-width: 150px;
-    max-height: 200px;
-    min-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 250px;
+    min-height: 250px;
     transition: all ease-in-out 350ms;
     cursor: pointer;
 }
@@ -253,7 +253,7 @@ ul.work-dropdown-menu {
 }
 
 .homepage-external-link-button {
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     text-transform: capitalize;
     color: #fff;
@@ -280,14 +280,16 @@ ul.work-dropdown-menu {
 }
 .homepage-external-link-button-container.work {
     margin-bottom: 50px;
+
 }
 .homepage-external-link-button.contact {
     margin-right: 10px;
 }
+
 /* Pricing */
 #pricing {
     width: 100%;
-    height: 40vh;
+    height: 400px;
     background: #80d8ff;
 }
 .pricing-container {
@@ -316,7 +318,6 @@ ul.work-dropdown-menu {
 /* Testimonials Slider */
 #testimonials {
     background: #fff;
-    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -412,7 +413,7 @@ ul.work-dropdown-menu {
 .testimonials-title {    
     font-size: 3rem;
     width: 55%;
-    margin: 0 auto;
+    margin: 25px auto;
 }
 
 .clothing-title,
@@ -502,7 +503,6 @@ ul.work-dropdown-menu {
 
 /* Footer */
 .footer {
-    height: 20vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
