@@ -702,6 +702,9 @@ ul.work-dropdown-menu {
     }
 
     /* pricing */
+    #pricing .pricing-container  div:first-child {
+        border-bottom: 5px solid #80d8ff;
+    }
     .pricing-container {
         flex-flow: column;
     }
@@ -709,6 +712,9 @@ ul.work-dropdown-menu {
     .pricing-text-container {
         height: 50%;
         width: 100%;
+    }
+    .pricing-text-container h3 {
+        text-align: center;
     }
 
     /* testimonials */
@@ -778,7 +784,7 @@ ul.work-dropdown-menu {
         width: 100%;
     }
 
-    .homepage-external-link-button.contact {
+    .footer .homepage-external-link-button.contact {
         width: 50%;
         padding: 15px;
         background: #969fa294;
