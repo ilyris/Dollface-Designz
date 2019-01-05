@@ -181,8 +181,15 @@ ul.work-dropdown-menu {
 .scroll-to-top-link {
     text-decoration: none;
     color: #000;
+    transition: all ease-in-out 400ms;
 }
 
+.scroll-to-top-link:hover {
+    transform: scale(1.1);
+}
+.scroll-to-top-link:hover .scroll-to-top-button-container {
+    box-shadow: 0px 3px 10px 0px rgb(54, 54, 54);
+}
 .scroll-to-top-button-container {
     display: flex;
     align-items: center;
@@ -193,6 +200,7 @@ ul.work-dropdown-menu {
     overflow: hidden;
     border: 2px solid #000;
     box-sizing: border-box;
+    transition: all ease-in-out 400ms;
 }
 
 .scroll-to-top-button {
@@ -201,20 +209,23 @@ ul.work-dropdown-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all ease-in-out 200ms;
+    transition: all ease-in-out 400ms;
     border-radius: 40px;
 }
 
 .scroll-to-top-button {
-    font-size: 30px;
     transform: translateY(15px);
+}
+.scroll-to-top-button i {
+    font-size: 22px;
 }
 
 .scroll-to-top-text {
     margin: 0;
     font-size: 12px;
     text-align: center;
-    transform: translateY(25px);
+    transform: translateY(28px);
+    width: 100;
 }
 
 .scroll-to-top-link:hover .scroll-to-top-button {
