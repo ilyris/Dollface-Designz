@@ -305,7 +305,7 @@ ul.work-dropdown-menu {
     align-items: center;
 }
 .pricing-text-container h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: #000;
     margin: 10px;
@@ -317,9 +317,11 @@ ul.work-dropdown-menu {
 
 /* Testimonials Slider */
 #testimonials {
+    height: 40vh;;
     background: #fff;
     display: flex;
     flex-direction: column;
+
     justify-content: center;
 }
 .testimonial-slider {
@@ -584,4 +586,66 @@ ul.work-dropdown-menu {
     color: #fff;
     font-size: 30px;
     margin: 0;
+}
+
+/* Media Queries */
+
+/* Phone */
+@media screen and (max-width:500px) {
+
+    /* Navigation */
+    .main-navigation-container {
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        height: 50px;
+        background-color: #000;
+    }
+    .main-navigation {
+        display: none;
+    }
+    .logo-container {
+        width: 50%;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    /* Home */
+    #home {
+        margin: 0;
+        width: 100%;
+        justify-content: unset;
+        height: 60%;
+    }
+    .image-and-text-container,
+    .home-page-text-container {
+        height: 50vh;
+        align-content: flex-start;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    .page-title.home-title {
+        display: none;
+    }
+    .slogan {
+        width: 70%;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 1.3rem;
+    }
+    .homepage-external-link-button.contact {
+        margin: 0;
+    }
+    .homepage-external-link-button-container.contact {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Work */
+    .page-front #work {
+        margin: 0;
+    }
 }
