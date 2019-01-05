@@ -36,7 +36,7 @@ h6 {
 .logo {
     margin: 0;
     width: 90%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: white;
     text-decoration: underline;
     text-decoration-color: #29b6f6;
@@ -64,6 +64,10 @@ h6 {
 
 .logo-container {
     justify-content: flex-start;
+    width: 40%;
+}
+
+.logo-link {
     width: 40%;
 }
 
@@ -160,6 +164,64 @@ ul.work-dropdown-menu {
     align-items: center;
 }
 
+/* Scroll to top button */
+.top-scroll-container {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 50px;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0 10px 10px 0;
+    z-index: 1000000;
+}
+
+.scroll-to-top-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.scroll-to-top-button-container {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 40px;
+    width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.scroll-to-top-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease-in-out 200ms;
+    border-radius: 40px;
+}
+
+.scroll-to-top-button {
+    font-size: 30px;
+    transform: translateY(15px);
+}
+
+.scroll-to-top-text {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    transform: translateY(25px);
+}
+
+.scroll-to-top-link:hover .scroll-to-top-button {
+    transform: translateY(-40px)
+}
+
+/* Home */
 .image-and-text-container {
     width: 100%;
     height: 75vh;
@@ -394,7 +456,7 @@ ul.work-dropdown-menu {
 
 .customers-name {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #01579B;
     font-style: italic;
 }
@@ -588,6 +650,10 @@ ul.work-dropdown-menu {
     width: 50%;
 }
 
+.footer .homepage-external-link-button.contact {
+    display: none;
+}
+
 .giveaway-container {
     display: flex;
     width: 30%;
@@ -702,9 +768,10 @@ ul.work-dropdown-menu {
     }
 
     /* pricing */
-    #pricing .pricing-container  div:first-child {
+    #pricing .pricing-container div:first-child {
         border-bottom: 5px solid #80d8ff;
     }
+
     .pricing-container {
         flex-flow: column;
     }
@@ -713,6 +780,7 @@ ul.work-dropdown-menu {
         height: 50%;
         width: 100%;
     }
+
     .pricing-text-container h3 {
         text-align: center;
     }
