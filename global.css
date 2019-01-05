@@ -624,7 +624,7 @@ ul.work-dropdown-menu {
         width: 100%;
         position: fixed;
         top: 0;
-        z-index: 10;
+        z-index: 10000;
         height: 50px;
         background-color: #000;
     }
@@ -646,12 +646,12 @@ ul.work-dropdown-menu {
         margin: 0;
         width: 100%;
         justify-content: unset;
-        height: 60%;
+        height: 75%;
     }
 
     .image-and-text-container,
     .home-page-text-container {
-        height: 50vh;
+        height: 100%;
         align-content: flex-start;
         justify-content: center;
         width: 100%;
@@ -666,10 +666,11 @@ ul.work-dropdown-menu {
         width: 70%;
         text-align: left;
         padding-left: 20px;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .homepage-external-link-button.contact {
+        font-size: 20px;
         margin: 0;
     }
 
@@ -699,6 +700,94 @@ ul.work-dropdown-menu {
         min-width: 100%;
         max-width: 100%;
     }
+
     /* pricing */
-    
+    .pricing-container {
+        flex-flow: column;
+    }
+
+    .pricing-text-container {
+        height: 50%;
+        width: 100%;
+    }
+
+    /* testimonials */
+    #testimonials {
+        justify-content: space-between;
+    }
+
+    .testimonial-slider {
+        height: 80%;
+    }
+
+    .testimonials-title {
+        font-size: 26px;
+        margin: 0 auto;
+    }
+
+    #testimonials .next,
+    #testimonials .previous {
+        display: none;
+    }
+
+    .customers-name {
+        font-size: 1.3rem;
+    }
+
+    .slide-container p {
+        width: auto;
+        margin-bottom: 2em;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .contact-us-container a {
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .logo-and-footer-links-container {
+        display: none;
+    }
+
+    .giveaway-container {
+        width: 100%;
+    }
+
+    .giveaway {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .facebook-icon-container {
+        text-align: center;
+        margin: 0 auto;
+        width: 50px;
+    }
+
+    .contact-us-container {
+        width: 100%;
+    }
+
+    .homepage-external-link-button.contact {
+        width: 50%;
+        padding: 15px;
+        background: #969fa294;
+        display: block;
+    }
+
+    .contact-us-container h3 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
 }
