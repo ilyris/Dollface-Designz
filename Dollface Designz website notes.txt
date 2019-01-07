@@ -11,5 +11,6 @@ From Powers installation and other jobs?
 // image slider for work on home page. moveOver scroll, Button click like testimonial slider. 
 DollFace Designz.com domain website.
 
-
-// MailChimp integration.
+//contact us -> direct email.
+//back to top fixed scroll buttom, bottom right of the screen when scrolling so users can quickly navigate back to the top
+// make logo clickable

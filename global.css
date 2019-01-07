@@ -11,7 +11,9 @@ html {
     scroll-behavior: smooth;
     font-size: 18px;
 }
-
+.active {
+    display: flex !important;
+}
 h1,
 h2,
 h3,
@@ -168,7 +170,7 @@ ul.work-dropdown-menu {
 .top-scroll-container {
     position: fixed;
     bottom: 0;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 50px;
     width: 100%;
