@@ -1,6 +1,5 @@
 // will need to animate elements, have the scroll to button fly in / out on certain heights. parallax the home page image with a mouse over preserve 3d effect
 //
-
 let slideIndex = 1;
 const previousButton = document.querySelector(".previous");
 const nextButton = document.querySelector(".next");
@@ -12,6 +11,17 @@ showContent(slideIndex);
 window.onscroll = () => {
   toggleScrollTopButton();
 };
+// window.onresize = () => {
+//   toggleMobileMenu();
+// };
+// window.onload = () => {
+//   toggleMobileMenu();
+// }
+
+function toggleMenu() {
+  this.classList.toggle("toggle-active");
+  document.querySelector(".main-ul").classList.toggle("on");
+}
 
 // Toggle the class active on the scroll to top button, so after a certain scroll height it appears and disappears
 const toggleScrollTopButton = () => {
@@ -23,6 +33,7 @@ const toggleScrollTopButton = () => {
     topScrollButton.classList.add("active", "fadeInUp");
   }
 };
+
 // Testimonial slider functionality
 function moveContent(slideIndexValue) {
   showContent((slideIndex += slideIndexValue));
