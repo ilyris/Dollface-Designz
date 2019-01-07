@@ -20,9 +20,10 @@ const toggleScrollTopButton = () => {
   if (scrollPosition <= 999) {
     topScrollButton.classList.remove("active");
   } else if (scrollPosition >= 1000) {
-    topScrollButton.classList.add("active");
+    topScrollButton.classList.add("active", "fadeInUp");
   }
 };
+// Testimonial slider functionality
 function moveContent(slideIndexValue) {
   showContent((slideIndex += slideIndexValue));
 }
