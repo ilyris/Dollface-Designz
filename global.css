@@ -816,7 +816,7 @@ ul.work-dropdown-menu {
         flex-direction: column;
         box-sizing: border-box;
         height: auto;
-        padding: 30px;
+        padding: 25px;
         align-items: flex-start;
     }
 
@@ -837,7 +837,8 @@ ul.work-dropdown-menu {
         margin-left: 0;
         box-shadow: none;
         color: #e7ebef;
-        width: 100%
+        width: 100%;
+        padding-left: 15px;
     }
 
     ul.work-dropdown-menu.mobile.drop-down-active {
@@ -878,10 +879,7 @@ ul.work-dropdown-menu {
 
     .mobile-active-a.main-navigation-a .fa-angle-right {
         color: white;
-        position: absolute;
-        right: 10%;
-        top: 30%;
-        font-size: .7em;
+        padding-left: 15px;
     }
 
     #triangle-up {
@@ -893,8 +891,10 @@ ul.work-dropdown-menu {
     .mobile-active-a.main-navigation-a.home,
     .mobile-active-a.main-navigation-a.work,
     .mobile-active-a.main-navigation-a.testimonials {
-        margin: 0 auto;
         font-size: 20px;
+        width: auto;
+        display: flex;
+        flex-flow: row wrap;
     }
 
     .main-navigation-a i {
