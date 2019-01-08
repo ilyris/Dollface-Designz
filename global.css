@@ -371,7 +371,6 @@ ul.work-dropdown-menu {
     margin: 0 auto 50px auto;
     box-sizing: border-box;
 }
-
 .project {
     margin: 20px;
 }
@@ -406,12 +405,12 @@ ul.work-dropdown-menu {
     padding: 10px;
     transition: all ease-in-out 500ms;
     font-weight: bold;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 .homepage-external-link-button:hover {
-    border-color: #fff;
+    border-color: rgb(61, 61, 61);
     background-color: #4FC3F7;
-    color: #000;
     transform: translateX(10%);
 }
 
