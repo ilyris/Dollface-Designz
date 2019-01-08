@@ -824,6 +824,7 @@ ul.work-dropdown-menu {
         width: 100%;
         flex-direction: row;
         padding: 0;
+        padding-right: 10px;
     }
 
     ul.work-dropdown-menu.mobile {
@@ -865,6 +866,7 @@ ul.work-dropdown-menu {
 
     .main-navigation .mobile-active-a.view-more-a.main-navigation-a {
         width: auto;
+        height: 60px;
     }
 
     /* .mobile-active-a.main-navigation-a {
