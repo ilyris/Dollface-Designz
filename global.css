@@ -910,6 +910,12 @@ ul.work-dropdown-menu {
     .main-navigation-a i {
         font-size: 20px;
         padding-top: 5px;
+        transition: all ease-in-out 300ms;
+    }
+    .main-navigation-a.work.mobile-active-a:hover .fa-angle-right,
+    .main-navigation-a.work.mobile-active-a:focus .fa-angle-right,
+    .main-navigation-a.work.mobile-active-a:active .fa-angle-right {
+        transform: rotate(90deg);
     }
     .mobile-menu-container {
         display: block;
@@ -921,6 +927,7 @@ ul.work-dropdown-menu {
     }
     .mobile-menu-button-link {
         color: #fff;
+        padding-right: 10px;
     }
 
     .main-navigation-li:nth-child(3) {
@@ -943,6 +950,7 @@ ul.work-dropdown-menu {
         width: 100%;
         justify-content: unset;
         height: 75%;
+        background: #fff;
     }
 
     .image-and-text-container,
