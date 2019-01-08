@@ -14,12 +14,6 @@ window.onscroll = () => {
   toggleScrollTopButton();
 };
 
-// function toggleMoreMenu() {
-//   const mainMenu = document.querySelector(".main-navigation");
-//   this.classList.toggle("toggle-active");
-//   mainMenu.classList.toggle("on");
-// }
-
 //Maybe break this big function into smaller functions
 function slideMenuOut() {
   const mainMenuSlideOut = document.querySelector(".main-navigation-container");

@@ -786,9 +786,8 @@ ul.work-dropdown-menu {
 
     .mobile-active-ul {
         width: 100%;
-        height: 100%;;
+        height: 90%;
         flex-direction: column-reverse;
-        align-items: flex-end;
     }
 
     .main-navigation-li:hover,
@@ -798,6 +797,9 @@ ul.work-dropdown-menu {
     li.main-navigation-li.mobile-active-li {
         width: 100%;
         padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
     }
     .main-navigation-a {
         font-size: 12px;
@@ -811,11 +813,25 @@ ul.work-dropdown-menu {
     .main-navigation .mobile-active-a.view-more-a.main-navigation-a {
         width: auto;
     }
-    .mobile-active-a.main-navigation-a {
+    /* .mobile-active-a.main-navigation-a {
         width: 100px;
-    }
-    .mobile-active-a.main-navigation-a i {
+    } */
+    .mobile-active-a.main-navigation-a .fa-briefcase,
+    .mobile-active-a.main-navigation-a .fa-home,
+    .mobile-active-a.main-navigation-a .fa-user,
+    .mobile-active-a.main-navigation-a .fa-phone {
         display: none;
+    }
+
+    .mobile-active-a.main-navigation-a .fa-angle-right {
+        color: white;
+        position: absolute;
+        right: 25%;
+        top: 19%;
+        font-size: .7em;
+    }
+    #triangle-up {
+        visibility: hidden;
     }
     .mobile-active-a.main-navigation-a.contact,
     .mobile-active-a.main-navigation-a.about,
@@ -824,6 +840,7 @@ ul.work-dropdown-menu {
     .mobile-active-a.main-navigation-a.testimonials {
         margin: 0 auto;
         font-size: 30px;
+        width: 50%;
     }
     .main-navigation-a i {
         font-size: 20px;
