@@ -30,7 +30,7 @@ h6 {
     align-content: center;
     justify-content: space-evenly;
     width: 80%;
-    height: 85%;
+    height: 90%;
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
@@ -83,6 +83,9 @@ h6 {
     transition: all ease-in-out 200ms;
     height: 60px;
     padding: 0 10px;
+}
+.main-navigation-li i {
+    display: none;
 }
 
 .main-navigation-li:hover,
@@ -232,7 +235,7 @@ ul.work-dropdown-menu {
     display: none;
     justify-content: flex-end;
     width: 50px;
-    width: 100%;
+    right: 0;
     height: 60px;
     box-sizing: border-box;
     padding: 0 10px 10px 0;
@@ -405,7 +408,7 @@ ul.work-dropdown-menu {
     padding: 10px;
     transition: all ease-in-out 500ms;
     font-weight: bold;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
 }
 
 .homepage-external-link-button:hover {
@@ -882,8 +885,13 @@ ul.work-dropdown-menu {
     .mobile-active-a.main-navigation-a .fa-briefcase,
     .mobile-active-a.main-navigation-a .fa-home,
     .mobile-active-a.main-navigation-a .fa-user,
-    .mobile-active-a.main-navigation-a .fa-phone {
-        display: none;
+    .mobile-active-a.main-navigation-a .fa-phone,
+    .mobile-active-a.main-navigation-a .fa-angle-right {
+        display: block;
+        padding-right: 10px;
+    }
+    .mobile-active-a.main-navigation-a .fa-angle-right {
+        padding: 0;
     }
 
     .mobile-active-a.main-navigation-a .fa-angle-right {
