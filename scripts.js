@@ -1,39 +1,52 @@
-// will need to animate elements, have the scroll to button fly in / out on certain heights. parallax the home page image with a mouse over preserve 3d effect
-//
+// will need to animate elements, have the scroll to button fly in / out on certain heights. 
+// parallax the home page image with a mouse over preserve 3d effect
 let slideIndex = 1;
-const previousButton = document.querySelector(".previous");
-const nextButton = document.querySelector(".next");
 
-
-previousButton.addEventListener("click", () => moveContent(-1));
-nextButton.addEventListener("click", () => moveContent(1));
-document.querySelector(".hamburger-menu").addEventListener("click", slideMenuOut);
-showContent(slideIndex);
+window.onload = () => {
+onLoadEventHandlers();
+}
 
 window.onscroll = () => {
   toggleScrollTopButton();
 };
 
-//Maybe break this big function into smaller functions
+
+
+
+const dropDownMenu = document.querySelector(".work-dropdown-menu");
+const mobileNavigationDropDownMenuTrigger = document.querySelector(".main-navigation-li.our-work");
+
+if(mobileNavigationDropDownMenuTrigger.classList.contains("our-work", "mobile-active-li") ) {
+  dropDownMenu.classList.toggle("drop-down-active");
+} else if(!mobileNavigationDropDownMenuTrigger.classList.contains("out-work", "mobile-active-li")) {
+
+}
+
+// Event handlers that need to be read on document load
+const  onLoadEventHandlers = () => {
+  const previousButton = document.querySelector(".previous");
+  const nextButton = document.querySelector(".next");
+  const hamburgerMenuButton = document.querySelector(".hamburger-menu");
+  previousButton.addEventListener("click", () => moveContent(-1));
+  nextButton.addEventListener("click", () => moveContent(1));
+  hamburgerMenuButton.addEventListener("click", slideMenuOut);
+  showContent(slideIndex);
+}
+
+
+
+
+//Toggle mobile menu
 function slideMenuOut() {
   const mainMenuSlideOut = document.querySelector(".main-navigation-container");
   const mainMenuUl = document.querySelector(".main-navigation");
-  const mainMenuLi = document.getElementsByClassName("main-navigation-li");
-  const mainMenuA = document.getElementsByClassName("main-navigation-a");
-  const dropDownMenu = document.querySelector(".work-dropdown-menu");
-  
 
   this.classList.toggle("toggle-active");
   mainMenuSlideOut.classList.toggle("on");
   mainMenuUl.classList.toggle("mobile-active-ul");
-  dropDownMenu.classList.toggle("drop-down-active");
-  for(value of mainMenuLi) {
-  value.classList.toggle("mobile-active-li");
-  }
-  for(value of mainMenuA) {
-    value.classList.toggle("mobile-active-a");
-    }
 }
+
+
 
 // Toggle the class active on the scroll to top button, so after a certain scroll height it appears and disappears
 const toggleScrollTopButton = () => {
@@ -46,7 +59,8 @@ const toggleScrollTopButton = () => {
   }
 };
 
-// Testimonial slider functionality
+
+// Testimonial slider functional
 function moveContent(slideIndexValue) {
   showContent((slideIndex += slideIndexValue));
 }

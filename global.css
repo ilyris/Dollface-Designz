@@ -820,8 +820,8 @@ ul.work-dropdown-menu {
         background-color: transparent;
     }
 
-    li.main-navigation-li.mobile-active-li,
-    .mobile-menu-button.view-more.mobile-active-li {
+    .main-navigation.mobile-active-ul li.main-navigation-li,
+    .mobile-menu-button.view-more {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -830,13 +830,13 @@ ul.work-dropdown-menu {
         align-items: flex-start;
     }
 
-    div.mobile-menu-button.view-more.mobile-active-li {
+    div.mobile-menu-button.view-more{
         width: 100%;
         flex-direction: row;
         padding: 0;
         padding-right: 10px;
     }
-
+/* toggle mobile class with javascript */ 
     ul.work-dropdown-menu.mobile {
         height: 0px;
         position: relative;
@@ -850,6 +850,7 @@ ul.work-dropdown-menu {
         color: #e7ebef;
         width: 100%;
         padding-left: 15px;
+        transition: all ease--in-out 200ms;
     }
 
     ul.work-dropdown-menu.mobile.drop-down-active {
@@ -874,27 +875,27 @@ ul.work-dropdown-menu {
         transition: none;
     }
 
-    .main-navigation .mobile-active-a.view-more-a.main-navigation-a {
+    .main-navigation.mobile-active-ul .view-more-a.main-navigation-a {
         width: auto;
         height: 60px;
     }
 
-    /* .mobile-active-a.main-navigation-a {
+    /* .mobile-active-ul.main-navigation-a {
         width: 100px;
     } */
-    .mobile-active-a.main-navigation-a .fa-briefcase,
-    .mobile-active-a.main-navigation-a .fa-home,
-    .mobile-active-a.main-navigation-a .fa-user,
-    .mobile-active-a.main-navigation-a .fa-phone,
-    .mobile-active-a.main-navigation-a .fa-angle-right {
+    .main-navigation.mobile-active-ul .main-navigation-a .fa-briefcase,
+    .main-navigation.mobile-active-ul .main-navigation-a .fa-home,
+    .main-navigation.mobile-active-ul .main-navigation-a .fa-user,
+    .main-navigation.mobile-active-ul .main-navigation-a .fa-phone,
+    .main-navigation.mobile-active-ul .main-navigation-a .fa-angle-right {
         display: block;
         padding-right: 10px;
     }
-    .mobile-active-a.main-navigation-a .fa-angle-right {
+    .main-navigation.mobile-active-ul .main-navigation-a .fa-angle-right {
         padding: 0;
     }
 
-    .mobile-active-a.main-navigation-a .fa-angle-right {
+    .main-navigation.mobile-active-ul .main-navigation-a .fa-angle-right {
         color: white;
         padding-left: 15px;
     }
@@ -903,11 +904,11 @@ ul.work-dropdown-menu {
         visibility: hidden;
     }
 
-    .mobile-active-a.main-navigation-a.contact,
-    .mobile-active-a.main-navigation-a.about,
-    .mobile-active-a.main-navigation-a.home,
-    .mobile-active-a.main-navigation-a.work,
-    .mobile-active-a.main-navigation-a.testimonials {
+    .main-navigation.mobile-active-ul .main-navigation-a.contact,
+    .main-navigation.mobile-active-ul .main-navigation-a.about,
+    .main-navigation.mobile-active-ul .main-navigation-a.home,
+    .main-navigation.mobile-active-ul .main-navigation-a.work,
+    .main-navigation.mobile-active-ul .main-navigation-a.testimonials {
         font-size: 20px;
         width: auto;
         display: flex;
@@ -919,9 +920,9 @@ ul.work-dropdown-menu {
         padding-top: 5px;
         transition: all ease-in-out 300ms;
     }
-    .main-navigation-a.work.mobile-active-a:hover .fa-angle-right,
-    .main-navigation-a.work.mobile-active-a:focus .fa-angle-right,
-    .main-navigation-a.work.mobile-active-a:active .fa-angle-right {
+    .mobile-active-ul .main-navigation-a.work:hover .fa-angle-right,
+    .mobile-active-ul .main-navigation-a.work:focus .fa-angle-right,
+    .mobile-active-ul .main-navigation-a.work:active .fa-angle-right {
         transform: rotate(90deg);
     }
     .mobile-menu-container {
