@@ -1,6 +1,7 @@
 // will need to animate elements, have the scroll to button fly in / out on certain heights. 
 // parallax the home page image with a mouse over preserve 3d effect
 let slideIndex = 1;
+let test = 123;
 
 window.onload = () => {
 onLoadEventHandlers();
@@ -13,14 +14,7 @@ window.onscroll = () => {
 
 
 
-const dropDownMenu = document.querySelector(".work-dropdown-menu");
-const mobileNavigationDropDownMenuTrigger = document.querySelector(".main-navigation-li.our-work");
 
-if(mobileNavigationDropDownMenuTrigger.classList.contains("our-work", "mobile-active-li") ) {
-  dropDownMenu.classList.toggle("drop-down-active");
-} else if(!mobileNavigationDropDownMenuTrigger.classList.contains("out-work", "mobile-active-li")) {
-
-}
 
 // Event handlers that need to be read on document load
 const  onLoadEventHandlers = () => {
@@ -40,10 +34,17 @@ const  onLoadEventHandlers = () => {
 function slideMenuOut() {
   const mainMenuSlideOut = document.querySelector(".main-navigation-container");
   const mainMenuUl = document.querySelector(".main-navigation");
+  const dropDownMenu = document.querySelector(".work-dropdown-menu");
+  const dropDownLi = document.querySelector(".main-navigation-li.our-work");
 
   this.classList.toggle("toggle-active");
   mainMenuSlideOut.classList.toggle("on");
   mainMenuUl.classList.toggle("mobile-active-ul");
+  if(mainMenuUl.classList.contains("mobile-active-ul") ) {
+    dropDownLi.addEventListener("click", () => {
+      dropDownMenu.classList.toggle("drop-down-active");
+    })
+  }
 }
 
 

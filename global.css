@@ -850,7 +850,6 @@ ul.work-dropdown-menu {
         color: #e7ebef;
         width: 100%;
         padding-left: 15px;
-        transition: all ease--in-out 200ms;
     }
 
     ul.work-dropdown-menu.mobile.drop-down-active {
@@ -920,7 +919,6 @@ ul.work-dropdown-menu {
         padding-top: 5px;
         transition: all ease-in-out 300ms;
     }
-    .mobile-active-ul .main-navigation-a.work:hover .fa-angle-right,
     .mobile-active-ul .main-navigation-a.work:focus .fa-angle-right,
     .mobile-active-ul .main-navigation-a.work:active .fa-angle-right {
         transform: rotate(90deg);
