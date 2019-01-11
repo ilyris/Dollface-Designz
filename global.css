@@ -17,6 +17,7 @@ html {
     position: fixed;
     background: rgba(39, 39, 39, 0.6);
     z-index: 2;
+    bottom: 0;
 }
 
 .active {
@@ -809,6 +810,7 @@ ul.work-dropdown-menu {
         width: 80%;
         flex-direction: column;
         justify-content: unset;
+        bottom: 0;
     }
 
     .main-navigation {
