@@ -1,7 +1,6 @@
 // will need to animate elements, have the scroll to button fly in / out on certain heights. 
 // parallax the home page image with a mouse over preserve 3d effect
 let slideIndex = 1;
-let test = 123;
 
 window.onload = () => {
 onLoadEventHandlers();
@@ -21,7 +20,6 @@ const  onLoadEventHandlers = () => {
   const previousButton = document.querySelector(".previous");
   const nextButton = document.querySelector(".next");
   const hamburgerMenuButton = document.querySelector(".hamburger-menu");
-  const faAngleRight = document.querySelector(".mobile-active-ul .main-navigation-a.work .fa-angle-right");
   previousButton.addEventListener("click", () => moveContent(-1));
   nextButton.addEventListener("click", () => moveContent(1));
   hamburgerMenuButton.addEventListener("click", slideMenuOut);
@@ -36,8 +34,8 @@ const  onLoadEventHandlers = () => {
 function slideMenuOut() {
   const mainMenuSlideOut = document.querySelector(".main-navigation-container");
   const mainMenuUl = document.querySelector(".main-navigation");
-  const dropDownMenu = document.querySelector(".work-dropdown-menu");
   const dropDownLi = document.querySelector(".main-navigation-li.our-work");
+  const mobileMenuActiveBackgroundOverlay = document.getElementById("layout-overlay");
   
 
 
@@ -46,12 +44,21 @@ function slideMenuOut() {
   mainMenuUl.classList.toggle("mobile-active-ul");
 
   if (mainMenuUl.classList.contains("mobile-active-ul")) {
-    dropDownLi.addEventListener("click", () => {
-      const faAngleRight = document.querySelector(".mobile-active-ul .main-navigation-a.work .fa-angle-right");
-      dropDownMenu.classList.toggle("drop-down-active");
-      faAngleRight.classList.toggle("rotate-icon");
-    })
+    dropDownLi.addEventListener("click", toggleLevelTwoDropDownMenu);
   }
+  if(mainMenuSlideOut.classList.contains("on") == true) {
+    mobileMenuActiveBackgroundOverlay.classList.toggle("overlay-active");
+  } else if (mainMenuSlideOut.classList.contains("on") == false) {
+      mobileMenuActiveBackgroundOverlay.classList.remove("overlay-active");
+  }
+}
+
+const toggleLevelTwoDropDownMenu = () => {
+  const dropDownMenu = document.querySelector(".work-dropdown-menu");
+  const faAngleRight = document.querySelector(".mobile-active-ul .main-navigation-a.work .fa-angle-right");
+  
+  dropDownMenu.classList.toggle("drop-down-active");
+  faAngleRight.classList.toggle("rotate-icon");
 }
 
 
@@ -80,8 +87,8 @@ function showContent(slideIndexValue) {
   if (slideIndexValue < 1) {
     slideIndex = slideContainer.length;
   }
-  for (let i = 0; i < slideContainer.length; i++) {
-    slideContainer[i].style.display = "none";
+  for (let value of slideContainer) {
+    value.style.display = "none";
   }
   slideContainer[slideIndex - 1].style.display = "flex";
 }
