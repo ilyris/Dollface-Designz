@@ -836,7 +836,7 @@ ul.work-dropdown-menu {
         padding: 0;
         padding-right: 10px;
     }
-/* toggle mobile class with javascript */ 
+ 
     ul.work-dropdown-menu.mobile {
         height: 0px;
         position: relative;
@@ -919,8 +919,7 @@ ul.work-dropdown-menu {
         padding-top: 5px;
         transition: all ease-in-out 300ms;
     }
-    .mobile-active-ul .main-navigation-a.work:focus .fa-angle-right,
-    .mobile-active-ul .main-navigation-a.work:active .fa-angle-right {
+    .mobile-active-ul .main-navigation-a.work .fa-angle-right.rotate-icon {
         transform: rotate(90deg);
     }
     .mobile-menu-container {

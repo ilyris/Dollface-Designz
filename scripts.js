@@ -21,9 +21,11 @@ const  onLoadEventHandlers = () => {
   const previousButton = document.querySelector(".previous");
   const nextButton = document.querySelector(".next");
   const hamburgerMenuButton = document.querySelector(".hamburger-menu");
+  const faAngleRight = document.querySelector(".mobile-active-ul .main-navigation-a.work .fa-angle-right");
   previousButton.addEventListener("click", () => moveContent(-1));
   nextButton.addEventListener("click", () => moveContent(1));
   hamburgerMenuButton.addEventListener("click", slideMenuOut);
+
   showContent(slideIndex);
 }
 
@@ -36,13 +38,18 @@ function slideMenuOut() {
   const mainMenuUl = document.querySelector(".main-navigation");
   const dropDownMenu = document.querySelector(".work-dropdown-menu");
   const dropDownLi = document.querySelector(".main-navigation-li.our-work");
+  
+
 
   this.classList.toggle("toggle-active");
   mainMenuSlideOut.classList.toggle("on");
   mainMenuUl.classList.toggle("mobile-active-ul");
-  if(mainMenuUl.classList.contains("mobile-active-ul") ) {
+
+  if (mainMenuUl.classList.contains("mobile-active-ul")) {
     dropDownLi.addEventListener("click", () => {
+      const faAngleRight = document.querySelector(".mobile-active-ul .main-navigation-a.work .fa-angle-right");
       dropDownMenu.classList.toggle("drop-down-active");
+      faAngleRight.classList.toggle("rotate-icon");
     })
   }
 }
