@@ -1,22 +1,7 @@
-// will need to animate elements, have the scroll to button fly in / out on certain heights. 
-// parallax the home page image with a mouse over preserve 3d effect
 let slideIndex = 1;
 
-window.onload = () => {
-onLoadEventHandlers();
-}
-
-window.onscroll = () => {
-  toggleScrollTopButton();
-};
-
-
-
-
-
-
 // Event handlers that need to be read on document load
-const  onLoadEventHandlers = () => {
+const onLoadEventHandlers = () => {
   const previousButton = document.querySelector(".previous");
   const nextButton = document.querySelector(".next");
   const hamburgerMenuButton = document.querySelector(".hamburger-menu");
@@ -36,7 +21,7 @@ function slideMenuOut() {
   const mainMenuUl = document.querySelector(".main-navigation");
   const dropDownLi = document.querySelector(".main-navigation-li.our-work");
   const mobileMenuActiveBackgroundOverlay = document.getElementById("layout-overlay");
-  
+
 
 
   this.classList.toggle("toggle-active");
@@ -46,17 +31,17 @@ function slideMenuOut() {
   if (mainMenuUl.classList.contains("mobile-active-ul")) {
     dropDownLi.addEventListener("click", toggleLevelTwoDropDownMenu);
   }
-  if(mainMenuSlideOut.classList.contains("on") == true) {
+  if (mainMenuSlideOut.classList.contains("on") == true) {
     mobileMenuActiveBackgroundOverlay.classList.toggle("overlay-active");
   } else if (mainMenuSlideOut.classList.contains("on") == false) {
-      mobileMenuActiveBackgroundOverlay.classList.remove("overlay-active");
+    mobileMenuActiveBackgroundOverlay.classList.remove("overlay-active");
   }
 }
 
 const toggleLevelTwoDropDownMenu = () => {
   const dropDownMenu = document.querySelector(".work-dropdown-menu");
   const faAngleRight = document.querySelector(".mobile-active-ul .main-navigation-a.work .fa-angle-right");
-  
+
   dropDownMenu.classList.toggle("drop-down-active");
   faAngleRight.classList.toggle("rotate-icon");
 }
@@ -91,4 +76,11 @@ function showContent(slideIndexValue) {
     value.style.display = "none";
   }
   slideContainer[slideIndex - 1].style.display = "flex";
+}
+
+window.onload = () => {
+  onLoadEventHandlers();
+}
+window.onscroll = () => {
+  toggleScrollTopButton();
 }
