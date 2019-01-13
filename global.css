@@ -49,12 +49,12 @@ h6 {
 
 .logo {
     margin: 0;
-    width: 90%;
+    width: 100%;
     font-size: 1.5rem;
     color: white;
-    text-decoration: underline;
-    text-decoration-color: #29b6f6;
     padding-left: 10px;
+    letter-spacing: 1px;
+    transition: all ease-in-out 300ms;
 }
 
 .mobile-menu-container {
@@ -86,7 +86,12 @@ h6 {
 }
 
 .logo-link {
-    width: 40%;
+    /* width: 40%; */
+    text-decoration: none;
+    transition: all ease-in-out 200ms;
+}
+.logo-link:hover .logo {
+    color: #4fc3f7;
 }
 
 .main-navigation-li {
