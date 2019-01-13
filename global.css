@@ -234,15 +234,15 @@ ul.work-dropdown-menu {
     border-radius: 2px;
 }
 
-.hamburger-menu.toggle-active span {
+.mobile-menu-button-link.toggle-active span {
     background-color: transparent;
 }
 
-.hamburger-menu.toggle-active span:before {
+.mobile-menu-button-link.toggle-active span:before {
     transform: rotate(400deg) translate(-1px, 0px);
 }
 
-.hamburger-menu.toggle-active span:after {
+.mobile-menu-button-link.toggle-active span:after {
     transform: rotate(-400deg) translate(6px, -7px);
 }
 

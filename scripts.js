@@ -4,7 +4,7 @@ let slideIndex = 1;
 const onLoadEventHandlers = () => {
   const previousButton = document.querySelector(".previous");
   const nextButton = document.querySelector(".next");
-  const hamburgerMenuButton = document.querySelector(".hamburger-menu");
+  const hamburgerMenuButton = document.querySelector(".mobile-menu-button-link");
   previousButton.addEventListener("click", () => moveContent(-1));
   nextButton.addEventListener("click", () => moveContent(1));
   hamburgerMenuButton.addEventListener("click", slideMenuOut);
