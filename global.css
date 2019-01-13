@@ -990,15 +990,22 @@ ul.work-dropdown-menu {
         justify-content: unset;
         height: 75%;
         background: #fff;
+        padding-bottom: 50px;
+        box-sizing: content-box;
     }
 
     .image-and-text-container,
     .home-page-text-container {
         height: 100%;
         align-content: flex-start;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
         padding: 0;
+    }
+    .home-page-text-container {
+        height: 25%;
+        display: flex;
+        align-items: flex-start;
     }
 
     .page-title.home-title {
@@ -1046,12 +1053,9 @@ ul.work-dropdown-menu {
     }
 
     /* pricing */
-    #pricing .pricing-container div:first-child {
-        border-bottom: 5px solid #80d8ff;
-    }
-
     .pricing-container {
         flex-flow: column;
+        height: 90%;
     }
 
     .pricing-text-container {
@@ -1073,8 +1077,8 @@ ul.work-dropdown-menu {
     }
 
     .testimonials-title {
-        font-size: 26px;
-        margin: 0 auto;
+        font-size: 1.3em;
+        margin: 10px auto;
     }
 
     #testimonials .next,
