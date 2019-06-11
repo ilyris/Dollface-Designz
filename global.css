@@ -101,12 +101,6 @@ tr {
   align-items: center;
 }
 
-.searchBarItem {
-  padding: 20px;
-  transition: all ease-in-out 120ms;
-  display: flex;
-}
-
 .mainLi:hover {
   background: #d5d5d5;
 }
@@ -123,36 +117,12 @@ tr {
   position: relative;
 }
 
-#mainSearchLink,
-#shoppingCart {
-  font-size: 2rem;
-  transition: all ease-in-out 120ms;
-  position: relative;
-  color: #000;
-  display: flex !important;
-  align-items: center;
-}
-
-.searchBarItem:hover {
-  background-color: #006ae4;
-  cursor: pointer;
-}
-
-.searchBarItem.activeState {
-  background-color: #006ae4;
-  border-bottom: 3px solid #d8d7d7;
-}
-
-.searchBarItem.activeState #mainSearchLink {
-  color: #fff;
-}
-
 #logoWrapper {
   width: 100%;
   position: relative;
   flex-direction: row;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #000;
   padding: 10px 0 10px 0;
 }
@@ -169,6 +139,9 @@ tr {
   color: #006ae4;
 }
 
+#closeMobileMenuButton {
+  display: none;
+}
 /* Drop down menu */
 #subMenuWrapper {
   opacity: 0;
@@ -278,7 +251,7 @@ img {
 
 .hamburger-menu {
   display: flex;
-  z-index: 100;
+  z-index: 10;
   height: 25px;
   transition: all 1s ease-in-out;
   justify-content: center;
@@ -316,11 +289,8 @@ img {
   border-radius: 2px;
 }
 
-.hamburger-menu.toggle-active span {
-  background-color: transparent;
-}
 
-.hamburger-menu.toggle-active span:before {
+/* .hamburger-menu.toggle-active span:before {
   transform: rotate(400deg) translate(-1px, 0px);
 }
 
@@ -330,15 +300,7 @@ img {
 
 .hamburger-menu.toggle-active span {
   background-color: transparent;
-}
-
-.hamburger-menu.toggle-active span:before {
-  transform: rotate(400deg) translate(-1px, 0px);
-}
-
-.hamburger-menu.toggle-active span:after {
-  transform: rotate(-400deg) translate(6px, -7px);
-}
+} */
 
 #mobileMenuContainer {
   display: none;
@@ -952,7 +914,9 @@ a.designer {
   .hamburger-menu {
     display: flex;
   }
-
+  #closeMobileMenuButton {
+    display: block;
+  }
   #mainNavigation {
     display: none;
   }
@@ -970,7 +934,19 @@ a.designer {
     top: 0;
     z-index: 10;
   }
-
+  #closeMobileMenuButton.fa-times {
+    color: #fff;
+    right: 7%;
+    top: 20px;
+    position: fixed;
+    font-size: 3rem;
+    z-index: 11;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+#closeMobileMenuButton.fa-times.on {
+  opacity: 1;
+}
   #mobileMenuContainer {
     background: green;
     width: 80%;
