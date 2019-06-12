@@ -966,7 +966,7 @@ a.designer {
     z-index: 12;
   }
 
-  #mobieMenuWrapper {
+  #mobileMenuWrapper {
     position: fixed;
     z-index: 11;
     display: flex;
@@ -975,7 +975,7 @@ a.designer {
     visibility: hidden;
   }
 
-  #mobieMenuWrapper.mobileOn {
+  #mobileMenuWrapper.mobileOn {
     width: 100%;
     height: 100%;
     visibility: visible;
@@ -1121,7 +1121,7 @@ a.designer {
   }
 
   #hamburgerMenuContainer {
-    padding: 0 10px;
+    padding: 5px 10px 0 0px;
   }
 
   .logo {
