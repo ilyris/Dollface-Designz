@@ -291,7 +291,7 @@ img {
 }
 
 
-/* .hamburger-menu.toggle-active span:before {
+.hamburger-menu.toggle-active span:before {
   transform: rotate(400deg) translate(-1px, 0px);
 }
 
@@ -301,7 +301,7 @@ img {
 
 .hamburger-menu.toggle-active span {
   background-color: transparent;
-} */
+}
 
 #mobileMenuContainer {
   display: none;
