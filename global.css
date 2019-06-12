@@ -52,7 +52,10 @@ tr {
   justify-content: space-between;
   padding-bottom: 5px;
 }
-
+/* Mobile menu */
+#mobileMenuWrapper {
+  display: none;
+}
 
 /* Navigation Menu */
 #mainHeader {
@@ -106,7 +109,7 @@ tr {
 }
 
 .mainLi:hover .mainLinks {
-  color: #000;
+  color: #f10505;
 }
 
 .mainLinks {
@@ -123,12 +126,12 @@ tr {
   flex-direction: row;
   display: flex;
   justify-content: space-evenly;
-  background-color: #000;
+  background-color: #fff;
   padding: 10px 0 10px 0;
 }
 
 .logo {
-  color: #fff;
+  color: #000;
   font-family: "Lobster", cursive;
   transition: all ease-in-out 200ms;
   font-size: 6rem;
@@ -419,6 +422,7 @@ img {
 .homepage-heading {
   font-size: 7.5rem;
   margin: 10px 0;
+  color: #ffffff;
 }
 
 .homepage-slogan {
@@ -464,7 +468,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #006ae4;
+  background: #f10505;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -572,17 +576,19 @@ img {
   justify-content: center;
   height: 50px;
   padding: 5px;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   transition: all ease-in-out 200ms;
   font-size: 3rem;
   color: #000;
+  background-color: #fff;
 }
 
 .pop-up-container:hover {
   transform: scale(1.1);
   box-shadow: 0px 10px 30px -10px #111;
-  background-color: #000;
+  background-color: #f10505;
   color: #fff;
+  border: 2px solid #f10505;
 }
 
 .pop-up-container i {
