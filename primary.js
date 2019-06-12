@@ -46,15 +46,15 @@ function toggleMenu() {
   const overlay = document.getElementById('mobileMenuOverlay').classList;
   if(hamburgerMenu.contains("toggle-active")) {
     wrapper.add("mobileOn");
-    wrapper.toggle("fadeInLeft");
+    wrapper.toggle("fadeInUpBig");
     overlay.add('fadeIn');
     overlay.remove('fadeOut');
-      if(wrapper.contains('fadeOutLeft')) {
-        wrapper.remove("fadeOutLeft");
+      if(wrapper.contains('fadeOutDownBig')) {
+        wrapper.remove("fadeOutDownBig");
       }
   } else if(!hamburgerMenu.contains('toggle-active')) {
-    wrapper.remove("fadeInLeft");
-    wrapper.toggle("fadeOutLeft");
+    wrapper.remove("fadeInUpBig");
+    wrapper.toggle("fadeOutDownBig");
     overlay.remove('fadeIn');
     overlay.add('fadeOut');
   }
@@ -76,15 +76,15 @@ function toggleMenu() {
 //     if(hamburgerMenu.classList.contains("toggle-active")) {
 //       this.mobileMenuCloseButton.add('on');
 //       this.wrapper.add("mobileOn");
-//       this.wrapper.toggle("fadeInLeft");
+//       this.wrapper.toggle("fadeInUpBig");
 //       this.overlay.add('fadeIn');
 //       this.overlay.remove('fadeOut');
-//         if(this.wrapper.contains('fadeOutLeft')) {
-//           this.wrapper.remove("fadeOutLeft");
+//         if(this.wrapper.contains('fadeOutDownBig')) {
+//           this.wrapper.remove("fadeOutDownBig");
 //         }
 //     } else {
-//       this.wrapper.remove("fadeInLeft");
-//       this.wrapper.toggle("fadeOutLeft");
+//       this.wrapper.remove("fadeInUpBig");
+//       this.wrapper.toggle("fadeOutDownBig");
 //       this.overlay.remove('fadeIn');
 //       this.overlay.add('fadeOut');
 //       this.mobileMenuCloseButton.remove('on');
