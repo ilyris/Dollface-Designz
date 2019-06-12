@@ -926,24 +926,27 @@ a.designer {
   #mainNavigation {
     display: none;
   }
+  #hamburgerWrapper {
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    right: 0;
+    width: 100%;
+    z-index: 12;
+    display: flex;
+    margin-bottom: 25px;
+}
 
   #hamburgerMenuContainer {
     display: flex;
-    justify-content: flex-end;
     padding-top: 5px;
-    margin-right: 25px;
-    margin-bottom: 25px;
     width: 60px;
     align-items: center;
     background: #fff;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 12;
-    height: 60px;
     justify-content: center;
     border-radius: 50%;
     box-shadow: -1px 1px 10px #000000;
+    height: 60px;
   }
 
   /* #hamburgerMenuContainer.sticky {
