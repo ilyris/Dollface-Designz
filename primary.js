@@ -4,7 +4,6 @@ $(document).ready(function(){
   });
 });
 ///////////////////////////
-
 document.querySelector('.hamburger-menu').addEventListener('click', toggleMenu, false);
 
 
@@ -49,12 +48,8 @@ function toggleMenu() {
     wrapper.toggle("translateUp");
     overlay.add('fadeIn');
     overlay.remove('fadeOut');
-      // if(wrapper.contains('translateDown')) {
-      //   wrapper.remove("translateDown");
-      // }
   } else if(!hamburgerMenu.contains('toggle-active')) {
     wrapper.remove("translateUp");
-    // wrapper.toggle("translateDown");
     overlay.remove('fadeIn');
     overlay.add('fadeOut');
   }
