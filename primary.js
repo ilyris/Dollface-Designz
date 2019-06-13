@@ -40,16 +40,13 @@ function toggleStickyNavbar() {
 }
 
 function toggleSecondaryMenu() {
-  // const dropDownLinkContainer = document.querySelector('.dropDownParent').classList;
   const hamburgerMenu = document.querySelector('.hamburger-menu').classList;
   const menuWrapper = document.getElementById('secondaryMobileMenu').classList;
-
 
   if(hamburgerMenu.contains("toggle-active")) {
     menuWrapper.toggle("translateUpTwo");
   } else if(!hamburgerMenu.contains('toggle-active')) {
     menuWrapper.remove("translateUpTwo");
-
   }
 }
 

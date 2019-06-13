@@ -996,7 +996,7 @@ a.designer {
     transform: translateY(0%);
   }
   #secondaryMobileMenu.translateUpTwo {
-    transform: translateY(100%);
+    transform: translateY(225px);
     visibility: visible;
   }
   #mobileMenuOverlay {
@@ -1030,7 +1030,7 @@ a.designer {
     visibility: hidden;
     position: fixed;
     z-index: 11;
-    height: 250px;
+    height: 350px;
     border-top-left-radius: 50%;
     background: #ffffff;
     bottom: 40%;
