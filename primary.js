@@ -39,10 +39,10 @@ function toggleStickyNavbar() {
   }
 }
 
-function toggleSecondaryMenu() {
+function toggleSecondaryMenu(event) {
   const hamburgerMenu = document.querySelector('.hamburger-menu').classList;
   const menuWrapper = document.getElementById('secondaryMobileMenu').classList;
-
+  event.preventDefault();
   if(hamburgerMenu.contains("toggle-active")) {
     menuWrapper.toggle("translateUpTwo");
   } else if(!hamburgerMenu.contains('toggle-active')) {
