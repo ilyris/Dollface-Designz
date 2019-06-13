@@ -57,6 +57,7 @@ tr {
   display: none;
 }
 
+
 /* Navigation Menu */
 #mainHeader {
   width: 100%;
@@ -951,15 +952,6 @@ a.designer {
     height: 60px;
   }
 
-  /* #hamburgerMenuContainer.sticky {
-    position: fixed;
-    background: #000;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    padding: 20px;
-  } */
-
   #closeMobileMenuButton.fa-times {
     color: #fff;
     right: 7%;
@@ -997,10 +989,16 @@ a.designer {
     width: 200%;
     visibility: visible;
   }
+  #secondaryMobileMenu.mobileOn {
+    visibility: visible;
+  }
   #mobileMenuWrapper.translateUp {
     transform: translateY(0%);
   }
-
+  #secondaryMobileMenu.translateUpTwo {
+    transform: translateY(100%);
+    visibility: visible;
+  }
   #mobileMenuOverlay {
     width: 100%;
     z-index: 10;
@@ -1026,6 +1024,41 @@ a.designer {
   font-size: 2rem;
   padding: 10px;
   box-sizing: border-box;
+}
+#secondaryMobileMenu {
+  width: 200%;
+    visibility: hidden;
+    position: fixed;
+    z-index: 11;
+    height: 250px;
+    border-top-left-radius: 50%;
+    background: #ffffff;
+    bottom: 40%;
+    border-top-right-radius: 50%;
+    left: -50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px -10px 25px -3px #000;
+    transform: translateY(150%);
+    transition: transform 350ms ease-in-out;
+}
+#subNavMobileMenu {
+  display: flex;
+    margin-top: 20px;
+    flex-flow: row wrap;
+    width: 50%;
+    height: 120px;
+    justify-content: center;
+}
+#subNavMobileMenu li {
+  list-style: none;
+  padding: 0 10px;
+  font-size: 1.6rem;
+}
+#subNavMobileMenu li a {
+  color: #006ae4;
+  letter-spacing: 1px;
+  font-weight: 800;
 }
 
   /* Home section */
@@ -1111,7 +1144,6 @@ a.designer {
     width: auto !important;
     padding: 10px;
   }
-
 
   .customers-name {
     font-size: 2rem;
