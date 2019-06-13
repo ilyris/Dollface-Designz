@@ -287,7 +287,7 @@ img {
 .hamburger-menu span,
 .hamburger-menu span:after,
 .hamburger-menu span:before {
-  width: 28px;
+  width: 25px;
   height: 3px;
   background-color: #006ae4;
   transition: all 0.3s;
@@ -318,11 +318,11 @@ img {
   left: 0;
   height: 60px;
   box-sizing: border-box;
-  padding: 0 10px 10px 0;
+  padding: 0 10px 0 0;
   z-index: 1000000;
   width: 70px;
   margin-left: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .top-scroll-container.active {
@@ -349,9 +349,9 @@ img {
   background: #ffffff;
   border-radius: 40px;
   box-shadow: -1px 1px 10px #000000;
-  width: 60px;
+  width: 45px;
   height: 600px;
-  min-height: 60px;
+  min-height: 45px;
   max-height: 50px;
   overflow: hidden;
   box-sizing: border-box;
@@ -944,13 +944,13 @@ a.designer {
   #hamburgerMenuContainer {
     display: flex;
     padding-top: 5px;
-    width: 60px;
+    width: 45px;
     align-items: center;
     background: #fff;
     justify-content: center;
     border-radius: 50%;
     box-shadow: -1px 1px 10px #000000;
-    height: 60px;
+    height: 45px;
   }
 
   #closeMobileMenuButton.fa-times {
@@ -972,13 +972,9 @@ a.designer {
   #mobileMenuWrapper {
     position: fixed;
     z-index: 11;
-    height: 250px;
-    display: flex;
-    border-top-left-radius: 50%;
-    background: #006ae4;
+    height: 350px;
+    background: #b9b9b9;
     bottom: 0;
-    border-top-right-radius: 50%;
-    left: -50%;
     display: flex;
     justify-content: center;
     visibility: hidden;
@@ -987,7 +983,7 @@ a.designer {
   }
 
   #mobileMenuWrapper.mobileOn {
-    width: 200%;
+    width: 100%;
     visibility: visible;
   }
   #secondaryMobileMenu.mobileOn {
@@ -1017,7 +1013,7 @@ a.designer {
 
   #mobileMenu {
     display: flex;
-    margin-top: 75px;
+    margin-top: 20px;
 }
 
 .mobileLi {
@@ -1026,34 +1022,20 @@ a.designer {
   padding: 10px;
   box-sizing: border-box;
 }
-#secondaryMobileMenu {
-  width: 200%;
-    visibility: hidden;
-    position: fixed;
-    z-index: 11;
-    height: 350px;
-    border-top-left-radius: 50%;
-    background: #ffffff;
-    bottom: 40%;
-    border-top-right-radius: 50%;
-    left: -50%;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px -10px 25px -3px #000;
-    transform: translateY(150%);
-    transition: transform 350ms ease-in-out;
+.mobileLinks {
+  color: #006ae4;
+}
+.dropDownParent:active > #subNavMobileMenu,
+.dropDownParent:focus-within > #subNavMobileMenu {
+  visibility: visible;
 }
 #subNavMobileMenu {
-  display: flex;
-    margin-top: 20px;
-    flex-flow: row wrap;
-    width: 50%;
-    height: 120px;
-    justify-content: center;
+  position: absolute;
+  visibility: hidden;
 }
 #subNavMobileMenu li {
   list-style: none;
-  padding: 0 10px;
+  padding: 10px;
   font-size: 1.6rem;
 }
 #subNavMobileMenu li a {
