@@ -937,8 +937,9 @@ a.designer {
     right: 0;
     width: 100%;
     z-index: 12;
-    background: #000;
     display: flex;
+    background: rgb(49,109,227);
+    background: linear-gradient(142deg, rgba(49,109,227,1) 0%, rgba(0,138,255,1) 100%);
 }
 
 #hamburgerWrapper .iconLinks {
@@ -970,7 +971,8 @@ a.designer {
     width: 60px;
     height: 60px;
     position: absolute;
-    background: #000000;
+    background: rgb(49,109,227);
+    background: linear-gradient(142deg, rgba(49,109,227,1) 0%, rgba(0,138,255,1) 100%);
     z-index: -120;
     border-radius: 50%;
     bottom: -1px;
