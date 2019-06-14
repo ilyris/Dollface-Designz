@@ -995,7 +995,7 @@ a.designer {
     position: fixed;
     z-index: 11;
     height: 100%;
-    background: #b9b9b9;
+    background: #fff;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -1045,26 +1045,49 @@ a.designer {
   font-size: 2rem;
   padding: 10px;
   box-sizing: border-box;
-  border-bottom: 2px solid #e3e3e3;
+  border-bottom: 1px solid #d3d1d1;
+  position: relative;
+}
+.mobileLinks {
+  color: #000;
+  font-size: 2.4rem;
 }
 
-.dropDownParent:active > #subNavMobileMenu,
-.dropDownParent:focus-within > #subNavMobileMenu {
-  visibility: visible;
-}
 #subNavMobileMenu {
-  position: absolute;
+  position: relative;
   visibility: hidden;
+  height: 0;
+  background: #d0d0d0;
+}
+#subNavMobileMenu.show {
+  visibility: visible;
+  height: auto;
 }
 #subNavMobileMenu li {
   list-style: none;
   padding: 10px;
   font-size: 1.6rem;
+  border-bottom: 1px solid #b5b3b3;;
 }
+.dropDownIcon {
+  height: 50px;
+  width: 40px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #03A9F4;
+}
+.dropDownIcon i {
+  transition: all ease-in-out 100ms;
+}
+
 #subNavMobileMenu li a {
-  color: #006ae4;
+  color: #000000;
   letter-spacing: 1px;
-  font-weight: 800;
+  padding-left: 10px;
 }
 
   /* Home section */
