@@ -10,21 +10,7 @@ document.querySelector('.hamburger-menu').addEventListener('click', toggleMenu, 
 // Event Listeners
 window.onscroll = () => {
   toggleStickyNavbar();
-  toggleScrollTopButton();
 }
-
-
-function toggleScrollTopButton() {
-  const topScrollButton = document.querySelector(".top-scroll-container");
-  let scrollPosition = window.scrollY;
-  if (scrollPosition >= 1000) {
-    topScrollButton.classList.add("active", "fadeInUp");
-  } else if (scrollPosition <= 999) {
-      topScrollButton.classList.remove("active");
-    }
-}
-
-
 function toggleStickyNavbar() {
   const mainNavigationContainer = document.getElementById('mainNavigation');
   const hamburgerMenuContainer = document.getElementById('hamburgerMenuContainer');
